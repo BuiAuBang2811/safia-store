@@ -1,5 +1,5 @@
 <?php
-    $mysqli = new mysqli("localhost","root","","safia");
+    $mysqli = new mysqli(process.env.PHP_PUBLIC_API_URL);
 
     // Check connection
     if ($mysqli->connect_errno) {
